@@ -1,0 +1,569 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+
+/* Reset de estilos padrão do navegador */
+body, h1, h2, ul, li {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  list-style: none;
+}
+
+/* Estilos para o corpo da página */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+}
+
+/* Estilos para a barra de navegação */
+nav {
+  flex: content;
+  background-color: #333;
+  padding: 10px;
+  color: #fff;
+  opacity: 80%;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+h2 {
+  font-size: 24px;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+
+}
+.active {
+  color:#ffce30;
+}
+li {
+  margin-right: 15px;
+}
+a.register {
+  color: #ffcc00;
+}
+a.register:hover {
+  opacity: 60%;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+}
+
+
+nav a:hover {
+  color: #ffcc00;
+}
+.ct2 {
+  margin-top: 0px;
+  margin-bottom: 25px;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center; 
+}
+
+.footer-logo img {
+  max-width: 240px; 
+}
+
+.footer-info, .footer-about {
+  flex: 1;
+  padding: 0 20px;
+}
+
+.footer-info h3, .footer-about h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+
+.footer-info p, .footer-about p {
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+
+.footer-info a {
+  color: #ffcc00;
+  text-decoration: none;
+}
+
+
+.footer-info a:hover {
+  text-decoration: underline;
+}
+
+
+.footer-about p {
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.maratona-section {
+  position: relative; 
+  background-color: #333; 
+  color: #fff;
+  text-align: center;
+}
+
+
+.maratona-section img {
+  width: 100%; 
+  height: 95vh;
+  opacity: 45%;
+  display: block; 
+}
+
+
+.maratona-section .container {
+  position: absolute; 
+  top: 50%; 
+  left: 50%; 
+  transform: translate(-50%, -50%); 
+}
+
+
+
+.maratona-text h2 {
+  font-size: 54px;
+  margin-bottom: 10px;
+}
+
+.maratona-text p {
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+.semana-academica-section {
+  background-color: #fff; 
+  color: #333;
+  text-align: center;
+
+}
+
+
+.semana-academica-section .container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+
+.semana-academica-text {
+  padding: 20px;
+}
+
+.semana-academica-text h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.semana-academica-text p {
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+
+.jogos-section {
+  background-color: #f0f0f0; 
+  text-align: center;
+}
+
+
+.eq {
+  text-decoration: none;
+  background-color: #ffcc00;
+  color: #333;
+  padding: 5px 10px;
+  border-radius: 5px;
+  display: inline-block;
+  margin-top: 10px; 
+  margin-bottom: 10px; 
+}
+
+
+.bottom-link {
+  margin-top: 0; 
+  margin-bottom: 10px;
+}
+
+
+.card {
+  flex: 2;
+  background-color: #fff;
+  border-radius: 5px;
+  margin-right: 30px;
+  margin-bottom: 15px;
+  margin-top: 15px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+  height: 400px;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card img {
+  max-width: 100%;
+  width: 500px;
+  height: 225px;
+  border-radius: 5px;
+}
+.card a {
+  bottom: 0;
+}
+
+.card h3 {
+  font-size: 20px;
+  margin: 10px 0;
+}
+
+.card p {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+
+
+button {
+  background-color: #ffcc00; 
+  color: #333;
+  font-size: 17px;
+  padding: 10px 20px;
+  font-weight: bold;
+  border: none; 
+  border-radius: 5px; 
+  cursor: pointer; 
+  margin: 5px; 
+  transition: background-color 0.3s, color 0.3s; 
+}
+
+
+button:hover {
+  background-color: #333; 
+  color: #fff; 
+}
+
+
+.maratona-text button {
+  margin: 10px 5px; 
+}
+
+
+.programming-section {
+  background-image: url('../img/prog.webp'); 
+  background-size: cover;
+  background-position: 50%;
+  color: #fff;
+  text-align: center;
+  padding: 100px 0;
+  position: relative; 
+}
+
+
+.programming-section .container {
+  max-width: 1200px;
+  height: 200px;
+  margin: 0 auto;
+}
+
+
+.text-container {
+  position: absolute;
+  top: 50%; 
+  left: 50%; 
+  transform: translate(-50%, -50%); 
+}
+
+
+.text-container h1 {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 20px;
+
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+}
+
+
+.text-container p {
+  font-size: 24px;
+  line-height: 1.5;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+}
+
+
+.programming-section::before {
+  content: "";
+  background-color: rgba(0, 0, 0, 0.5); 
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+
+}
+.sponsor {
+  overflow: hidden; 
+  display: flex; 
+  align-items: center; 
+  margin: 30px 0px 30px 15px;
+}
+.sponsor-section .container {
+  justify-content: center;
+}
+.jogos .container {
+  margin-top: 30px;
+  justify-content: center;
+}
+.sponsor-section h1 {
+  display: flex;
+  justify-content: center;
+
+  text-align: center;
+}
+
+.sponsor-image {
+  flex: 1; 
+  width: 500px; 
+  max-height: 300px;
+}
+
+.sponsor-image img {
+  max-width: 250px; 
+  border-radius: 10%; 
+}
+
+
+.sponsor-info {
+  flex: 3; 
+}
+
+
+.sponsor-info h3 {
+  font-size: 24px; 
+  margin: 0; 
+}
+
+.sponsor-info p {
+  font-size: 16px; 
+  color: #666; 
+  margin: 10px 0; 
+}
+
+
+.linguagens-section {
+  background-color: #f0f0f0; 
+  text-align: center;
+  padding: 20px 0;
+}
+
+
+.linguagens-images {
+  width: 100%;
+  display: flex; 
+  justify-content: space-between; 
+  align-items: center; 
+}
+
+
+.linguagens-images img {
+  margin-top: 25px;
+  width: 100px; 
+  height: auto; 
+  margin-right: 10px; 
+}
+
+
+.linguagens-images img:last-child {
+  margin-right: 0;
+}
+
+
+.cronograma-container {
+  text-align: center;
+  background-color: #f0f0f0;
+  padding: 30px 0;
+}
+
+
+.dia {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 600px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+.dia h2 {
+  font-size: 24px;
+  color: #333;
+}
+
+
+.custom-ul {
+  list-style: none;
+  padding: 0;
+}
+
+
+.custom-li {
+  font-size: 18px;
+  margin: 20px 0;
+  color: #666;
+  display: flex; 
+  align-items: flex-start; 
+}
+
+
+.horario {
+  font-size: 18px;
+  font-weight: bold;
+  width: 100px; 
+  margin-right: 20px; 
+}
+
+
+.fotos-section {
+  background-color: #f0f0f0; 
+  text-align: center;
+  padding: 40px 0;
+}
+
+
+.fotos-section h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+
+.foto {
+  margin-right: 30px;
+  margin-bottom: 30px; 
+}
+
+
+.foto img {
+  max-width: 100%;
+
+  height: auto; 
+  border-radius: 5px; 
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+  transition: transform 0.2s ease-in-out; 
+}
+
+
+.foto p {
+  font-size: 16px;
+  margin-top: 10px;
+  color: #666; 
+}
+
+
+.foto img:hover {
+  transform: scale(1.05); 
+}
+section.ct .container {
+  justify-content: center;
+}
+
+
+#formulario {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 70vh; 
+}
+
+#formulario div {
+  margin-bottom: 20px;
+}
+
+#formulario label {
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+#formulario input[type="text"],
+#formulario input[type="number"],
+#formulario input[type="email"],
+#formulario select {
+  width: 400px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+#formulario button[type="submit"] {
+  background-color: #ffcc00;
+  color: #333;
+  font-size: 18px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+#formulario button[type="submit"]:hover {
+  background-color: #333;
+  color: #fff;
+}
+
+.my-form label {
+  font-weight: bold;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+.my-form div {
+  display: flex; align-items: center; margin-right: 35px;
+}
+
+/* Estilos para o contêiner */
+.my-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Estilos para os botões */
+.my-button {
+  background-color: #ffcc00;
+  color: #333;
+  font-size: 18px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.my-button:hover {
+  background-color: #333;
+  color: #fff;
+}

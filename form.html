@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulário de Inscrição</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <nav>
+    <div class="container">
+      <h2><a href="index.html">Semana Academica IFC</a></h2>
+      <ul>
+        <li><a href="">Parceria</a></li>
+        <li><a href="maratona.html">Maratona</a></li>
+        <li><a href="jogos.html">Jogos eletrônicos</a></li>
+        <li><a href="cronograma.html">Cronograma</a></li>
+        <li><a href="fotos.html">Fotos</a></li>
+        <li><a href="orçamento.html">Orçamento</a></li>
+        <li><a href="form.html" class="register">Inscreva-se</a></li>
+      </ul>
+    </div>
+  </nav>
+
+
+  <form id="formulario">
+    <h2 style="margin-bottom: 15px;">Formulário de Inscrição</h2>
+    <div>
+      <label for="nome">Nome do Aluno:</label>
+      <input type="text" id="nome" name="nome" required>
+    </div>
+    <div>
+      <label for="matricula">Matrícula do Aluno:</label>
+      <input type="number" id="matricula" name="matricula" required>
+    </div>
+    <div>
+      <label for="cpf">CPF:</label>
+      <input type="text" id="cpf" name="cpf" required pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" title="Formato válido: 123.456.789-01">
+    </div>
+    <div>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+    </div>
+    <div>
+      <label for="turma">Turma:</label>
+      <select id="turma" name="turma" required>
+        <option value="">Selecione a Turma</option>
+        <option value="turma1">Turma A</option>
+        <option value="turma2">Turma B</option>
+        <option value="turma3">Turma C</option>
+      </select>
+    </div>
+    <div>
+      <button type="submit">Enviar</button>
+    </div>
+
+    
+  </form>
+  <p id="mensagem" style="color: green;display: flex;justify-content: center;text-align: center;"></p>
+
+  <footer style="margin-top: 17px;">
+    <div class="container">
+      <div class="footer-logo">
+        <img src="img/img.logo-ifc.jpeg" alt="Logo da Semana Academica IFC">
+      </div>
+      <div class="footer-info">
+        <h3>Informações de Contato</h3>
+        <p>Endereço: SC-135, km 125 - Campo Experimental, Videira - SC, 89564-590 </p>
+        <p>Instagram: @ifc.oficial.videira</p>
+        <p>Telefone: (49) 3533-4900</p>
+      </div>
+      <div class="footer-about">
+        <h3>Sobre o Evento</h3>
+        <p>A Semana Acadêmica IFC é um evento anual que reúne estudantes e profissionais da área de informática para
+          palestras, workshops e competições.</p>
+      </div>
+    </div>
+  </footer>
+
+
+  <script src="js/script.js"></script>
+</body>
+</html>

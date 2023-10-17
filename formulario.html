@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Livros</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script>
+        function mascara(i){
+   
+   var v = i.value;
+   
+   if(isNaN(v[v.length-1])){ 
+      i.value = v.substring(0, v.length-1);
+      return;
+   }
+   
+   i.setAttribute("maxlength", "14");
+   if (v.length == 3 || v.length == 7) i.value += ".";
+   if (v.length == 11) i.value += "-";
+
+    }
+    </script>
+</head>
+<body>
+    <header>
+
+    </header>
+    <main>
+        <section class="container">
+            <form>
+                <fieldset>
+                    <legend>Inscreva-se</legend>
+                        <div class="input-container">
+                            <label for="Nome">Nome do aluno</label>
+                            <input type="text" name="Nome" placeholder="Nome do aluno" required autofocus>
+                        </div>
+                        <div class="input-container">
+                            <label for="matricula">Número de matricula</label>
+                            <input type="number" name="matricula" placeholder="Número de matricula" required>
+                        </div>
+                        <div class="input-container">
+                            <label for="cpf">CPF</label>
+                            <input type="text" name="cpf" placeholder="CPF" oninput="mascara(this)" required>
+                        </div>
+                        <div class="input-container">
+                            <label for="email">Email</label>
+                            <input type="email" name="email" placeholder="Email" required>
+                        </div>
+                        <div class="input-container">
+                            <label for="turma">Turma</label>
+                            <select name="Turma" id="turma" required>
+                                <option value="">Selecione</option>
+                                <option value="1 INFO A">1 INFO A</option>
+                                <option value="1 INFO B">1 INFO B</option>
+                                <option value="2 INFO A">2 INFO A</option>
+                                <option value="2 INFO B">2 INFO B</option>
+                                <option value="3 INFO A">3 INFO A</option>
+                                <option value="3 INFO B">3 INFO B</option>
+                            </select>
+                        </div>
+                        <div class="actions">
+                            <button type="submit">Cadastrar</button>
+                            <button type="reset">Limpar</button>
+                        </div>
+                </fieldset>
+            </form>
+
+        </section>
+    </main>
+</body>
+</html>
+
