@@ -17,7 +17,7 @@ body {
 /* Estilos para a barra de navegação */
 nav {
   flex: content;
-  background-color: #333;
+  background-color: #341c4d;
   padding: 10px;
   color: #fff;
   opacity: 80%;
@@ -70,7 +70,7 @@ nav a:hover {
 }
 
 footer {
-  background-color: #333;
+  background-color: #341c4d;
   color: #fff;
   padding: 20px 0;
   text-align: center; 
@@ -115,7 +115,7 @@ footer {
 
 .maratona-section {
   position: relative; 
-  background-color: #333; 
+  background-color:#333; 
   color: #ffffff;
   text-align: center;
 }
@@ -266,7 +266,7 @@ button:hover {
 
 
 .programming-section {
-  background-image: url('../img/prog.webp'); 
+  background-image: url('../img/maratona\ de\ jogos.jpg'); 
   background-size: cover;
   background-position: 50%;
   color: #fff;
