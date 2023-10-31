@@ -17,30 +17,36 @@ document.addEventListener("DOMContentLoaded", function () {
         email: email,
         turma: turma,
       };
+
+      alert("Inscrição efetuada com sucesso!");
+      form.reset();
+
+      var inscritos = localStorage.getItem('total_inscritos') || 0;
+      localStorage.setItem("total_inscritos", parseInt(inscritos) + 1);
   
-      const url = "http://jkorpela.fi/cgi-bin/echo.cgi";
+    //   const url = "http://jkorpela.fi/cgi-bin/echo.cgi";
   
-      fetch(url, {
-        method: "POST",
-        body: JSON.stringify(dados),
-        headers: {
-          "Content-Type": "application/json",
-        },
-      })
-        .then((response) => response.json())
-        .then((data) => {
-          console.log("Resposta do servidor:", data);
+    //   fetch(url, {
+    //     method: "POST",
+    //     body: JSON.stringify(dados),
+    //     headers: {
+    //       "Content-Type": "application/json",
+    //     },
+    //   })
+    //     .then((response) => response.json())
+    //     .then((data) => {
+    //       console.log("Resposta do servidor:", data);
   
-          if (data) {
-            document.getElementById("mensagem").textContent = "Inscrição efetuada com sucesso.";
-            form.reset();
-          } else {
-            alert("Ocorreu um erro ao processar a inscrição. Por favor, tente novamente.");
-          }
-        })
-        .catch((error) => {
-          console.error("Erro ao enviar inscrição:", error);
-          alert("Ocorreu um erro ao enviar a inscrição. Por favor, tente novamente mais tarde.");
-        });
+    //       if (console.log (data)){
+    //         document.getElementById("mensagem").textContent = "Inscrição efetuada com sucesso.";
+    //         form.reset();
+    //       } else {
+    //         alert("Ocorreu um erro ao processar a inscrição. Por favor, tente novamente.");
+    //       }
+    //     })
+    //     .catch((error) => {
+    //       console.error("Erro ao enviar inscrição:", error);
+    //       alert("Ocorreu um erro ao enviar a inscrição. Por favor, tente novamente mais tarde.");
+    //     });
     });
   });

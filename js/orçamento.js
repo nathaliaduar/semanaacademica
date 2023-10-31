@@ -1,15 +1,15 @@
 if (localStorage.getItem('total_inscritos') !== null) {
 
     document.getElementById('numero_participantes').value = localStorage.getItem('total_inscritos');
-  }
+}
   
-  document.getElementById('numero_participantes').addEventListener('change', function () {
+// document.getElementById('numero_participantes').addEventListener('change', function () {
   
-    var totalInscritos = document.getElementById('numero_participantes').value;
+//     var totalInscritos = document.getElementById('numero_participantes').value;
   
   
-    localStorage.setItem('total_inscritos', totalInscritos);
-  });
+//     localStorage.setItem('total_inscritos', totalInscritos);
+//   });
   
   document.addEventListener('DOMContentLoaded', function () {
   

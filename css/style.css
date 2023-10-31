@@ -379,6 +379,7 @@ button:hover {
   display: flex; 
   justify-content: space-between; 
   align-items: center; 
+  mix-blend-mode: darken;
 }
 
 
